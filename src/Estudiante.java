@@ -1,26 +1,45 @@
 public class Estudiante {
+    private boolean isTurnOn = false
     private String nivel;
     private int Grado;
     private String estudiante;
     private long uniqueID;
 
 
-    public static final String Agregar_Nivel = ;
-    public static final int Agregar_Grado 
+    public boolean isTurnOn() {
+        return this.isTurnOn;
+    }
 
-    protected static int asignacionesNivel = 0;
-    protected static int getAsignacionesGrado = 0;
+    public String getNivel() {
+        return this.nivel;
+    }
 
-    //static Scanner userinput = new Scanner(System.in);
-
-
-
-
-
-    public Estudiante(String nivel, int grado, String estudiante, long uniqueID) {
+    public void setNivel(String nivel) {
         this.nivel = nivel;
-        this.Grado = grado;
+    }
+
+    public int getGrado() {
+        return Grado;
+    }
+
+    public void setGrado(int grado) {
+        Grado = grado;
+    }
+
+    public String getEstudiante() {
+        return estudiante;
+    }
+
+    public void setEstudiante(String estudiante) {
         this.estudiante = estudiante;
+    }
+
+    public long getUniqueID() {
+        return uniqueID;
+    }
+
+    public void setUniqueID(long uniqueID) {
         this.uniqueID = uniqueID;
     }
+
 }
